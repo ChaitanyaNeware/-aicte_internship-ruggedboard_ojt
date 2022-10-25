@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main()
+
+{
+
+    int a;
+
+    printf("size of int: %zu bytes",sizeof(a));
+
+}
