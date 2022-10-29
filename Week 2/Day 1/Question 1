@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+ 
+
+int main()
+
+{
+
+    int a,b,sum;
+
+    float avg;
+
+ 
+
+    printf("Enter first number :");
+
+    scanf("%d",&a);
+
+    printf("\nEnter second number :");
+
+    scanf("%d",&b);
+
+ 
+
+    sum=a+b;
+
+    avg= (float)(a+b)/2;
+
+ 
+
+    printf("\nSum of %d and %d: %d",a,b,sum);
+
+    printf("\nAverage of %d and %d: %f",a,b,avg);
+
+ 
+
+    return 0;
+
+}
+
