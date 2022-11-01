@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main()
+{
+    int a;
+    char yn;
+    do {
+        printf("Enter an integer number :");
+        scanf("%d", &a);
+
+        if (a == 0)
+            printf("Number is zero.");
+        else if (a > 0)
+            printf("Number is positive.");
+        else
+            printf("Number is negative.");
+
+        printf("\n\nWant to check again another number then press Y/y for 'yes' or N/n for 'no') :");
+        fflush(stdin); 
+        scanf(" %c", &yn); 
+    } while (yn == 'Y' || yn == 'y');
+
+    return 0;
+}

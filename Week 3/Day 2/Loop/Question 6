@@ -1,0 +1,28 @@
+#include<stdio.h>
+
+void main()
+{
+ int n,last;
+
+ printf("\n Enter The N : ");
+ scanf("%d",&last);
+
+ printf("\n\n Even Number List From 1 to %d :\n ",last);
+
+ n=2;
+ while(n<=last)
+ {
+  printf(" %d",n);
+  n=n+2;
+ }
+
+ printf("\n\n Odd Number List From 1 to %d :\n ", last);
+
+ n=1;
+ while(n<=last)
+ {
+  printf(" %d",n);
+  n=n+2;
+ }
+
+}
