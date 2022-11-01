@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main()
+
+{   
+
+   
+
+    char color[200];
+
+    
+
+    printf("Enter: ");
+
+    scanf("%s", color);
+
+    
+
+    printf("You have entered: %s.", color);
+
+    
+
+    return 0;
+
+}
+
