@@ -1,0 +1,79 @@
+#include <signal.h>
+
+#include <stdio.h>
+
+#include <stdlib.h>
+
+#include <unistd.h>
+
+#include "mraa/gpio.h"
+
+volatile sig_atomic_t flag = 1;
+
+void
+
+sig_handler(int signum)
+
+{
+
+    if (signum == SIGINT) {
+
+        fprintf(stdout, "Exiting...\n");
+
+        flag = 0;
+
+    }
+
+}
+
+int
+
+main(void)
+
+{
+
+    int i;
+
+    mraa_result_t status = MRAA_SUCCESS;
+
+    mraa_gpio_context gpio;
+
+int a[3]= {61,62,63};
+
+int inp1[3] = {0,0,0};
+
+int inp2[3] = {1,1,1};
+
+    signal(SIGINT, sig_handler);
+
+    mraa_init();
+
+gpio = mraa_gpio_init_multi(a,3);
+
+    while (flag) 
+
+{
+
+    mraa_gpio_write_multi(gpio, inp1);
+
+sleep(1);
+
+	mraa_gpio_write_multi(gpio,inp2);sleep(1);
+
+      
+
+}
+
+    mraa_deinit();
+
+    return EXIT_SUCCESS;
+
+err_exit:
+
+    mraa_result_print(status);
+
+    mraa_deinit();
+
+    return EXIT_FAILURE;
+
+}
