@@ -1,0 +1,11 @@
+Write brief note about ls using man page.
+
+The most common ls options are -a (all files) and -l (long or details).
+Tab completion is supported and can be configured with .inputrc
+When output to file the files are listed one per line.
+
+ls is pronounced as the two letters: "ell ess"
+
+By default, colour is not used to distinguish types of files. That is equivalent to using --color=none.
+Using the --color option without the optional WHEN argument is equivalent to using --color=always.
+With --color=auto, color codes are output only if standard output is connected to a terminal (tty).

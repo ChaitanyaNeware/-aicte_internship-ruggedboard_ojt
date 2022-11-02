@@ -1,0 +1,5 @@
+Write brief note about cd using man page.
+
+cd command in linux known as change directory command. It is used to change current working directory. 
+
+Syntax:  $ cd [directory]
