@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+const int button = 8;            
+const int led =PC17;                           
+void setup() {
+  pinMode(button,INPUT);          
+  pinMode(led,OUTPUT);           
+  digitalWrite(led,LOW);       
+}
+
+void loop() {
+  if (digitalRead(button)==HIGH){ 
+    if (ledflag==0) {            
+      ledflag=1;                  
+      digitalWrite(led,HIGH);  
+      }                            
+    else {                       
+      ledflag=0;                  
+      digitalWrite(led,LOW);     
+    }
+  delay(1000);                    
+  }                               
+}                                
