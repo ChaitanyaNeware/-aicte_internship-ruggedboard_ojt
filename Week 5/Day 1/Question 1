@@ -1,0 +1,59 @@
+void setup()  
+
+{  
+
+  pinMode(PC13, OUTPUT);  
+
+  pinMode(PC17, OUTPUT);  
+
+  pinMode(PC19, OUTPUT);  
+
+}  
+
+void loop()  
+
+{  
+
+ 
+
+  digitalWrite(PC13, HIGH);  
+
+  delay(1000); 
+
+  digitalWrite(PC17, LOW);  
+
+  delay(1000);  
+
+  digitalWrite(PC19, LOW);  
+
+  delay(1000); 
+
+  
+
+  digitalWrite(PC13, LOW);  
+
+  delay(1000);  
+
+  digitalWrite(PC17, HIGH);  
+
+  delay(1000);   
+
+  digitalWrite(PC19, LOW);  
+
+  delay(1000);  
+
+  digitalWrite(PC13, LOW);  
+
+  delay(1000);   
+
+  digitalWrite(PC17, LOW);  
+
+  delay(1000);  
+
+  digitalWrite(PC19, HIGH);  
+
+  delay(1000); 
+
+   
+
+}  
