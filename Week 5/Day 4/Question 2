@@ -1,0 +1,21 @@
+#include <errno.h> 
+
+#include <fcntl.h>
+
+ #include <stdio.h>
+
+  #include <stdlib.h>
+
+#include <string.h>
+
+ #include <termios.h>
+
+  #include <unistd.h> 
+
+  int set_interface_attribs(int fd, int speed) 
+
+  { 	struct termios tty; 	  if (tcgetattr(fd, &tty) < 0)
+
+   	{ 		printf("Error from tcgetattr: %s\n", strerror(errno)); 	
+
+   		return -1; 	} 	
