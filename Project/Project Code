@@ -1,6 +1,6 @@
 #include <ESP8266_Lib.h>
 
-#define light 7
+#define light 2
 
 char ssid[] = "Wifi";
 
@@ -8,7 +8,7 @@ char pass[] = "Wifi-23";
 
 #include <SoftwareSerial.h>
 
-SoftwareSerial EspSerial(2, 3); 
+SoftwareSerial EspSerial(0,1); 
 
 #define ESP8266_BAUD 9600
 
